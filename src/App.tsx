@@ -1,14 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { flag } from "./util";
-
-function test(a: any, ...rest: any) {
-  console.log(rest);
-}
 
 function App() {
-  test(1, 2, 3, 4);
   return (
     <div className="App">
       <header className="App-header">
