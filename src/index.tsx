@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
+import SE from "./components/SE";
+
 import * as serviceWorker from "./serviceWorker";
 import ShellApp from "./ShellApp";
 
 ReactDOM.render(
   <React.StrictMode>
     <ShellApp />
+    <SE></SE>
   </React.StrictMode>,
   document.getElementById("root")
 );
