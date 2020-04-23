@@ -1,1 +1,1 @@
-export let flat: boolean = true;
+export let flag: boolean = true;
