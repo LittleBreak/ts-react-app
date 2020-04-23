@@ -2,9 +2,9 @@ import React from "react";
 // import Select from "react-select";
 import Select from "./SelectPinYin";
 const options = [
-  { value: "chocolate", label: "发广告" },
-  { value: "strawberry", label: "士大夫" },
-  { value: "vanilla", label: "蔡宗玎" },
+  { value: "chocolate", label: "发广告433001" },
+  { value: "strawberry", label: "士大夫433002" },
+  { value: "vanilla", label: "蔡宗玎999" },
 ];
 
 export default class Se extends React.Component {

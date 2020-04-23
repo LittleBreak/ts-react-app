@@ -14,16 +14,16 @@ class SelectPinYin extends Component {
           // Forked from Select.js
           let valueText = String(op.value),
             labelText = String(op.label),
-            pinyinText = String(op.pinyin),
-            pyText = String(op.py);
+            pinyinText = String(op.data.pinyin),
+            pyText = String(op.data.py);
           return !filterValue || this.props.matchPos === "start"
-            ? pinyinText.substr(0, filterValue.length) === filterValue ||
-                pyText.substr(0, filterValue.length) === filterValue ||
+            ? pinyinText.substring(0, filterValue.length) === filterValue ||
+                pyText.substring(0, filterValue.length) === filterValue ||
                 (this.props.matchProp !== "label" &&
-                  valueText.toLowerCase().substr(0, filterValue.length) ===
+                  valueText.toLowerCase().substring(0, filterValue.length) ===
                     filterValue) ||
                 (this.props.matchProp !== "value" &&
-                  labelText.toLowerCase().substr(0, filterValue.length) ===
+                  labelText.toLowerCase().substring(0, filterValue.length) ===
                     filterValue)
             : pinyinText.indexOf(filterValue.toLowerCase()) >= 0 ||
                 pyText.indexOf(filterValue.toLowerCase()) >= 0 ||
@@ -62,7 +62,6 @@ class SelectPinYin extends Component {
     return props;
   };
   render() {
-    console.log(this.props);
     return <Select ref="select" {...this.getProps()} />;
   }
 }
