@@ -7,12 +7,6 @@ import "antd/dist/antd.css";
 
 const Option = AntSelect.Option;
 
-const options = [
-  { value: "chocolate", label: "移动提交433001" },
-  { value: "strawberry", label: "移动提交433002" },
-  { value: "vanilla", label: "移动提交999" },
-];
-
 export default class Se extends React.Component {
   state = {
     selectedOption: null,
