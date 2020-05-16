@@ -1,0 +1,47 @@
+.contain {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
+.block {
+  width: 80px;
+  /* margin: 0px auto; */
+  border: 1px solid blue;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.span {
+  border: 1px solid blue;
+}
+.line-center {
+  border: 1px solid blue;
+}
+
+.contain::after,
+.line-center {
+  display: inline-block;
+  vertical-align: middle;
+}
+.contain::after {
+  content: "";
+  height: 100%;
+}
+.contain-3 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  display: table;
+}
+.contain-3 .son {
+  display: table-cell;
+  vertical-align: middle;
+  width: 30px;
+  border: 1px solid blue;
+}
+.baseline {
+  height: 40px;
+}
+.baseline .after {
+  display: inline-block;
+}

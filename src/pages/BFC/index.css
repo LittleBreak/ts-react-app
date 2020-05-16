@@ -1,0 +1,46 @@
+.box {
+  background-color: rgb(224, 206, 247);
+  border: 5px solid rebeccapurple;
+  overflow: auto;
+}
+
+.float {
+  float: left;
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.blue,
+.red-inner {
+  height: 50px;
+  margin: 10px 0;
+}
+
+.blue {
+  background: blue;
+}
+
+.red-outer {
+  overflow: hidden;
+  background: red;
+}
+
+.box-size {
+  width: 200px;
+  height: 150px;
+  border: 10px solid red;
+  background-color: blue;
+  padding: 10px;
+  margin: 20px;
+}
+
+.float {
+  float: left;
+  border: 1px solid blue;
+}
+.contain {
+  background-color: red;
+}
