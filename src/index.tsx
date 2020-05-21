@@ -5,13 +5,15 @@ import "./index.css";
 // import SE from "./components/SE";
 // import BFC from "./pages/BFC";
 // import AlignCenter from "./pages/AlignCenter";
-import Module from "./pages/Module";
+// import Module from "./pages/Module";
+// import FuncDebounce from "./pages/FuncDebounce";
+import Pattern from "./pages/Pattern";
 import * as serviceWorker from "./serviceWorker";
 // import ShellApp from "./ShellApp";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Module></Module>
+    <Pattern></Pattern>
   </React.StrictMode>,
   document.getElementById("root")
 );

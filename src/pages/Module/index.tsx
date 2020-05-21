@@ -1,19 +1,38 @@
 import React, { Component } from "react";
-// import * as comm from "./common";
-let comm = require("./common.js");
+import jsonp from "./common";
 
 class Mod extends Component {
-  componentDidMount() {
-    const s = new Set();
+  componentDidMount() {}
+  onClick = () => {
+    jsonp({
+      url: "http://39.101.201.237:8000/jsonp",
+      params: { wd: "Iloveyou" },
+      callback: "show",
+    }).then((data) => {
+      console.log("111", data);
+    });
 
-    [2, 3, 5, 4, 5, 2, 2].forEach((x) => s.add(x));
-    s.add({ a: 1 });
-    for (let i of s as any) {
-      console.log(i);
-    }
-  }
+    // (window as any)
+    //   .fetch("http://39.101.201.237:8000/cors", {
+    //     headers: {
+    //       "Access-Control-Allow-Origin": "*",
+    //       "Content-Type": "text/plain",
+    //     },
+    //     method: "PUT",
+    //   })
+    //   .then((data: any) => {
+    //     console.log(data);
+    //   })
+    //   .catch((e: any) => {
+    //     console.log(e);
+    //   });
+  };
   render() {
-    return <div>test</div>;
+    return (
+      <div>
+        <button onClick={this.onClick}>fetch</button>
+      </div>
+    );
   }
 }
 
