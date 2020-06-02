@@ -1,3 +1,4 @@
+/* 创建bfc */
 .box {
   background-color: rgb(224, 206, 247);
   border: 5px solid rebeccapurple;
@@ -13,34 +14,29 @@
   padding: 10px;
 }
 
-.blue,
-.red-inner {
-  height: 50px;
-  margin: 10px 0;
-}
-
-.blue {
-  background: blue;
-}
-
-.red-outer {
-  overflow: hidden;
-  background: red;
-}
-
-.box-size {
+/* demo 2 
+在父容器添加伪元素，撑起容器高度
+*/
+.wrap {
   width: 200px;
-  height: 150px;
-  border: 10px solid red;
-  background-color: blue;
-  padding: 10px;
-  margin: 20px;
+  border: 1px solid #333;
 }
-
-.float {
+.wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+.left {
   float: left;
-  border: 1px solid blue;
+  background: blue;
+  height: 100px;
+  width: 100px;
 }
-.contain {
-  background-color: red;
+.right {
+  float: left;
+  background: red;
+  height: 50px;
+  width: 100px;
 }

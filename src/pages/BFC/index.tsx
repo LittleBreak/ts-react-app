@@ -39,20 +39,13 @@ class BFC extends Component {
   render() {
     return (
       <div>
-        <div>{this.state.nums}</div>
-        <button onClick={this.onSort}>sort</button>
         <div className="box">
           <div className="float">I am a floated box!</div>
           <p>I am content inside the container.</p>
         </div>
-        <div className="blue"></div>
-        <div className="red-outer">
-          <div className="red-inner">red inner</div>
-        </div>
-        <div className="box-size"></div>
-        <div>
-          <div className="float">float</div>
-          <div className="contain">test</div>
+        <div className="wrap">
+          <div className="left"></div>
+          <div className="right"></div>
         </div>
       </div>
     );

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 // import App from "./App";
 // import SE from "./components/SE";
-// import BFC from "./pages/BFC";
+import BFC from "./pages/BFC";
 // import AlignCenter from "./pages/AlignCenter";
 // import Module from "./pages/Module";
 // import FuncDebounce from "./pages/FuncDebounce";
@@ -13,7 +13,8 @@ import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Pattern></Pattern>
+    <BFC></BFC>
+    {/* <Pattern></Pattern> */}
   </React.StrictMode>,
   document.getElementById("root")
 );
