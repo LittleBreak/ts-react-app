@@ -2,7 +2,7 @@
 .box {
   background-color: rgb(224, 206, 247);
   border: 5px solid rebeccapurple;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .float {
@@ -39,4 +39,12 @@
   background: red;
   height: 50px;
   width: 100px;
+}
+
+.margin {
+  margin: 10px;
+  border: 1px solid red;
+  background-color: yellow;
+  height: 50px;
+  width: 300px;
 }

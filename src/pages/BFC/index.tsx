@@ -46,6 +46,11 @@ class BFC extends Component {
         <div className="wrap">
           <div className="left"></div>
           <div className="right"></div>
+          <div>info</div>
+        </div>
+        <div className="margin">first div</div>
+        <div style={{ overflow: "auto" }}>
+          <div className="margin">second div</div>
         </div>
       </div>
     );
